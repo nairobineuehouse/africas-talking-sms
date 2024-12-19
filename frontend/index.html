@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Messaging</title>
+</head>
+<body>
+  <div class="container">
+    <img src="https://img.freepik.com/free-vector/two-hands-holding-phones-with-messages-speech-bubbles-people-chatting-through-mobile-app-flat-vector-illustration-communication-network-social-media-concept-banner-landing-web-page_74855-25390.jpg?semt=ais_tags_boosted" alt="Logo" class="logo">
+    <h1>Send a Message</h1>
+    <form id="messageForm" method="post">
+      <div class="form-group">
+        <label for="to">To:</label>
+        <input type="text" id="to" name="to" placeholder="Enter recipient's name">
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Type your message"></textarea>
+      </div>
+      <div id="success" style="display: none; color: green;"></div>
+      <div id="error" style="display: none; color: red;"></div> 
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
